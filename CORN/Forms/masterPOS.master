@@ -1,0 +1,71 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterPOS.master.cs" Inherits="Forms_masterPOS" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript" src="../AjaxLibrary/jquery-1.6.1.min.js"></script>
+   
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    
+    <link href="../css/POSstyle.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" language="javascript">
+        function ConfirmDayClose() {
+            if (confirm('This Will Close The Day Continue?') == true) {
+                window.location.href = "../Forms/frmDayCloseStatus.aspx";
+            }
+        }
+    </script>
+    <title>CORN :: Point Of Sales</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="header">
+            <div class="main">
+                <div class="header-t">
+                    <div class="logo">
+                    </div>
+                    <div class="menu-top">
+                        <ul>
+                            <li>
+                                <asp:LinkButton runat="server" ID="btnNewCustomer" Enabled="false" OnClick="btnNewCustomer_Click"> <image src="../images/icon-user.png" /><span>Customers<br /><b></b></span></asp:LinkButton>
+                            </li>
+                            <li>
+                                <asp:LinkButton runat="server" ID="btnHold" OnClick="btnHold_Click" Enabled="false" AccessKey="h" ToolTip="Alt + h"><image src="../images/icon-hold.png" /><span>Hold<br /><b></b></span></asp:LinkButton>
+                            </li>
+                            <li>
+                                <asp:LinkButton runat="server" ID="btnUnhold" OnClick="btnUnhold_Click" Enabled="false" AccessKey="u" ToolTip="Alt + u"><image src="../images/icon-unhold.png" /><span>Unhold<br /><b></b></span></asp:LinkButton>
+                            </li>
+                            <li>
+                                <asp:LinkButton runat="server" ID="btnpricelookup" OnClick="btnpricelookup_Click" AccessKey="p" ToolTip="Alt + p"
+                                    Enabled="false"><image src="../images/icon-search.png" /><span>Price Lookup<b></b></span></asp:LinkButton>
+                            </li>
+                            <li>
+                                <asp:LinkButton runat="server" ID="btnEditinvoice" Enabled="false" Visible="false" OnClientClick="ConfirmDayClose(); return false;"><image src="../images/icon-credit-note.png" /><span>Day Close<br /><b></b></span></asp:LinkButton>
+                            </li>
+                            <li>
+                                <asp:Panel runat="server" ID="ponholdpanel" Enabled="false">
+                                    <a href="#"><span style="margin-top: 14px;">Receipts on hold</span><asp:TextBox ID="lblonHold"
+                                        runat="server" Text="0" ReadOnly="true"></asp:TextBox></a>
+                                </asp:Panel>
+                            </li>
+                        </ul>
+                        <div class="shadow-t-menu">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <%--  <div>
+        <asp:Label>Powered By Fast Services</asp:Label>
+        </div>--%>
+    </div>
+    </form>
+</body>
+</html>

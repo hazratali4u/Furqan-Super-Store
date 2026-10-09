@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CORN", "CORN", "{981ACCBA-0C1B-43A4-80E2-C27ADA020E98}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		ProjectReferences = "{4CC9CBCE-9BBF-440E-850A-7B51F914792E}|CORNBusinessLayer.dll;{848C4FC7-6E77-4041-925B-4B874B9E7C4E}|CORNCommon.dll;{26D8191C-6D6A-4457-BD84-41F5DFAAF9C2}|CORNDataAccessLayer.dll;{DF27A1C1-7BFD-44DF-98FD-D3598947F58E}|CORNDatabaseLayer.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/CORN"
+		Debug.AspNetCompiler.PhysicalPath = "CORN\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\CORN\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/CORN"
+		Release.AspNetCompiler.PhysicalPath = "CORN\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\CORN\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52403"
+		SlnRelativePath = "CORN\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CORNBusinessLayer", "CORNBusinessLayer\CORNBusinessLayer.csproj", "{4CC9CBCE-9BBF-440E-850A-7B51F914792E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CORNCommon", "CORNCommon\CORNCommon.csproj", "{848C4FC7-6E77-4041-925B-4B874B9E7C4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CORNDataAccessLayer", "CORNDataAccessLayer\CORNDataAccessLayer.csproj", "{26D8191C-6D6A-4457-BD84-41F5DFAAF9C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CORNDatabaseLayer", "CORNDatabaseLayer\CORNDatabaseLayer.csproj", "{DF27A1C1-7BFD-44DF-98FD-D3598947F58E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{981ACCBA-0C1B-43A4-80E2-C27ADA020E98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981ACCBA-0C1B-43A4-80E2-C27ADA020E98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981ACCBA-0C1B-43A4-80E2-C27ADA020E98}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{981ACCBA-0C1B-43A4-80E2-C27ADA020E98}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{4CC9CBCE-9BBF-440E-850A-7B51F914792E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC9CBCE-9BBF-440E-850A-7B51F914792E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC9CBCE-9BBF-440E-850A-7B51F914792E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC9CBCE-9BBF-440E-850A-7B51F914792E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{848C4FC7-6E77-4041-925B-4B874B9E7C4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{848C4FC7-6E77-4041-925B-4B874B9E7C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{848C4FC7-6E77-4041-925B-4B874B9E7C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{848C4FC7-6E77-4041-925B-4B874B9E7C4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26D8191C-6D6A-4457-BD84-41F5DFAAF9C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26D8191C-6D6A-4457-BD84-41F5DFAAF9C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26D8191C-6D6A-4457-BD84-41F5DFAAF9C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26D8191C-6D6A-4457-BD84-41F5DFAAF9C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF27A1C1-7BFD-44DF-98FD-D3598947F58E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF27A1C1-7BFD-44DF-98FD-D3598947F58E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF27A1C1-7BFD-44DF-98FD-D3598947F58E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF27A1C1-7BFD-44DF-98FD-D3598947F58E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,36 @@
+﻿
+#main {
+	position:relative;
+	width:565px;
+}
+#boxbody {
+	float:left;
+	width:565px;
+	padding:69px 0px 130px 0px;
+	margin-top:30px;
+    margin-left:80px;
+	background-image:url(../images/login.png);
+	background-repeat:no-repeat;
+	background-position:top;
+}
+#boxbody div {
+	margin:5px 0px 0px 32px;/*background-color:#CCC;*/
+}
+#boxbody div input {
+	width:235px;
+	padding:9px 5px;
+	border:0px;
+	background-color:transparent;
+	font-weight:bold;/*background-color:#CCC;*/
+}
+#Products_select input {
+	cursor:pointer;
+}
+
+#boxbody div input.tb_signin {
+	width:100px;
+	margin-left:144px;
+	background-color:transparent;
+	cursor:pointer;
+	border:0px solid red;
+}
